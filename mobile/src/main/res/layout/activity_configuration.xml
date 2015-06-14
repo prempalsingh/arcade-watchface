@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="match_parent"
+  android:layout_width="match_parent">
+
+  <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    style="@style/MyActionBarStyle" />
+
+  <LinearLayout
+    android:layout_below="@+id/toolbar"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/delimiter"
+    android:showDividers="middle"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <RelativeLayout
+      android:id="@+id/configuration_background_colour"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/selector_preference_background"
+      android:paddingTop="16dp"
+      android:paddingBottom="16dp">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="@string/background_colour" />
+
+      <View
+        android:id="@+id/configuration_background_colour_preview"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+      android:id="@+id/configuration_time_colour"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/selector_preference_background"
+      android:paddingTop="16dp"
+      android:paddingBottom="16dp">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="@string/date_and_time_colour" />
+
+      <View
+        android:id="@+id/configuration_date_and_time_colour_preview"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+  </LinearLayout>
+</RelativeLayout>
