@@ -42,7 +42,7 @@ public class WatchFaceService extends CanvasWatchFaceService {
             GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
         private static final String ACTION_TIME_ZONE = "time-zone";
-        private static final String TAG = "SimpleEngine";
+        private static final String TAG = "ArcadeEngine";
 
         private ArcadeWatchFace watchFace;
         private Handler timeTick;
